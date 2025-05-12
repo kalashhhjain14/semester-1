@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swimming Fish Animation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #a3dff5; /* Light water background */
+    }
+
+    .fish {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: swim 10s linear infinite;
+    }
+
+    @keyframes swim {
+      0% {
+        left: -120px;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="C:\Users\Kalash\Desktop\HTML\unit 1\Screenshot 2025-05-12 212952.png"
+       alt="Fish" class="fish">
+
+</body>
+</html>
