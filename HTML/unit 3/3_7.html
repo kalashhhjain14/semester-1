@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Link and CSS Background</title>
+    <style>
+        .section1 {
+            background-color: green;
+            color: black;
+            padding: 20px;
+        }
+
+        .section2 {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
+    <script>
+        function showContent() {
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('main').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <h3>Create image as link on following image:</h3>
+        <a href="#" onclick="showContent()">
+            <img src="motorbike.jpg" alt="Bike" width="300">
+        </a>
+        <p>When click on this image it redirects on following webpage and apply CSS for background color.</p>
+    </div>
+
+    <div id="content">
+        <div class="section1">
+            <h2>Web Technology</h2>
+            <p>
+                HTML stands for HyperText Markup Language. It is used to design web pages using a markup language.
+                HTML is the combination of Hypertext and Markup language.Hypertext defines the link between the web pages. A markup language is used to define the text document within the tag which defines the structure of web pages.HTML is a markup language that is used by the browser to manipulate text,images, and other content to display it in the required format. 
+            </p>
+        </div>
+
+        <div class="section2">
+            <h2>C Programming</h2>
+            <p>
+                C is a procedural programming language.It was initially devloped by Dennis Ritchie as a system programming language to write operating system.The main feature of  C language include low-level access to memory.Simple set of keywords,and clean style,these
+            </p>
+        </div>
+    </div>
+</body>
+</html>
