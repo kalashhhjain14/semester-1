@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Periodic Table with CSS</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            width: 60px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f3f3f3;
+        }
+
+        .green {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .orange {
+            background-color: #f2b134;
+            color: black;
+        }
+
+        .center-text {
+            font-weight: bold;
+        }
+
+        .empty {
+            background-color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>I</th>
+            <th>II</th>
+            <th>III</th>
+            <th>IV</th>
+            <th>V</th>
+            <th>VI</th>
+            <th>VII</th>
+        </tr>
+        <tr>
+            <td class="green">H</td>
+            <td colspan="5" rowspan="4" class="center-text">Periodic Table<br>of Elements</td>
+            <td class="orange">He</td>
+        </tr>
+        <tr>
+            <td>Li</td>
+            <td class="orange">Ne</td>
+        </tr>
+        <tr>
+            <td>Na</td>
+            <td class="orange">Ar</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td class="orange">Kr</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Be</td>
+            <td>B</td>
+            <td>Al</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Mg</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Ga</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Ca</td>
+            <td>Sc</td>
+            <td>Ti</td>
+            <td>V</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>
