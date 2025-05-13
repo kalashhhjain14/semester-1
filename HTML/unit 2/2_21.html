@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Java SE 6 API</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .topbar {
+      background-color: #dcdcff;
+      padding: 10px;
+    }
+
+    .topbar a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      height: 100vh;
+    }
+
+    .sidebar a {
+      display: block;
+      color: blue;
+      text-decoration: none;
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .main {
+      padding: 20px;
+      flex: 1;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #dcdcff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Menu -->
+  <div class="topbar">
+    <a href="#">Overview</a>
+    <a href="#">Package</a>
+    <a href="#">Class</a>
+    <a href="#">Use</a>
+    <a href="#">Deprecated</a>
+    <a href="#">Index</a>
+    <a href="#">Help</a>
+  </div>
+
+  <!-- Layout: Sidebar + Main -->
+  <div class="container">
+    <div class="sidebar">
+      <b>All Classes</b><br>
+      <a href="#">AbstractAction</a>
+      <a href="#">AbstractButton</a>
+      <a href="#">AbstractDocument</a>
+      <!-- Add more if you want -->
+    </div>
+
+    <div class="main">
+      <h2>Java™ Platform, Standard Edition 6 API Specification</h2>
+      <p>This document is the API specification for version 6 of the Java™ Platform, Standard Edition.</p>
+      <p>See: <a href="#">Description</a></p>
+
+      <h3>Packages</h3>
+      <table>
+        <tr>
+          <th>Package</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="#">java.applet</a></td>
+          <td>Provides classes to create and manage applets.</td>
+        </tr>
+        <tr>
+          <td><a href="#">java.awt</a></td>
+          <td>Contains classes for building user interfaces and graphics.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
