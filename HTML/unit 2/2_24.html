@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Frame Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .banner {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .main {
+      display: flex;
+    }
+
+    .nav {
+      width: 25%;
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-right: 1px solid #ccc;
+    }
+
+    .content {
+      width: 75%;
+      padding: 10px;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    The Banner Frame - logos, graphics, etc. go here
+  </div>
+
+  <div class="main">
+    <div class="nav">
+      <h3>The Navigator Frame</h3>
+      <p>This page contains links that appear in the content frame.</p>
+    </div>
+    <div class="content">
+      <h3>The Content Frame</h3>
+      <p>This is where content is displayed. In a typical scenario, links in the navigator frame populate this page with content.</p>
+    </div>
+  </div>
+
+</body>
+</html>

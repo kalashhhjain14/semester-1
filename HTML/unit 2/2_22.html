@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Frames Example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .main {
+      display: flex;
+      height: 100vh;
+      border: 2px solid black;
+    }
+
+    .left-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      border-right: 2px solid gray;
+    }
+
+    .right-column {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .frame {
+      flex: 1;
+      padding: 20px;
+      border-bottom: 2px solid gray;
+    }
+
+    .frame:last-child {
+      border-bottom: none;
+    }
+
+    .right-column .frame {
+      border-left: 2px solid gray;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .link {
+      color: blue;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="main">
+  <!-- Left Column -->
+  <div class="left-column">
+    <div class="frame">
+      <div class="title">A Very Basic Example of HTML Frames</div>
+      <p>This is file A</p>
+    </div>
+    <div class="frame">
+      <p>This is file C</p>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right-column">
+    <div class="frame">
+      <p>This is file B</p>
+    </div>
+    <div class="frame">
+      <p>This is file D</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

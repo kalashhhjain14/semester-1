@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netscape Setup</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            border: 2px solid black;
+            width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            text-transform: uppercase;
+            margin: 20px 0 10px;
+        }
+
+        .description {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 10px 0 20px;
+        }
+
+        .setup-section {
+            display: flex;
+            border-top: 2px solid black;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .left, .right {
+            width: 50%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .left {
+            border-right: 2px solid black;
+            text-align: center;
+        }
+
+        .left p {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .right {
+            text-align: center;
+        }
+
+        .flags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .flags img {
+            width: 150px;
+            height: 70px;
+            border: 1px solid #000;
+        }
+
+        .button {
+            padding: 8px 16px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner Image -->
+    <img src="netscape.png" class="banner">
+
+    <!-- Heading -->
+    <h1>Set Up and Extend Netscape Navigator</h1>
+
+    <!-- Description -->
+    <p class="description">
+        Hello! Now that you've installed Netscape Navigator, there are a lot of great ways to
+        configure it to make it even more helpful and powerful, depending on how you want to surf the web.
+    </p>
+
+    <!-- Setup Section -->
+    <div class="setup-section">
+        <!-- Left: Continue Button -->
+        <div class="left">
+            <p>Press CONTINUE to begin the<br>Navigator set-up process.</p>
+            <button class="button">CONTINUE</button>
+        </div>
+
+        <!-- Right: Flags -->
+        <div class="right">
+            <p>Users of localized versions of Netscape Navigator<br>should click a flag below.</p>
+            <div class="flags">
+                <!-- Replace these with actual flag images if desired -->
+                <img src="flag.png">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
