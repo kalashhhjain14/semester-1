@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Table Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        thead {
+            background-color: #333;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item 1</td>
+                <td>$10.00</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Item 2</td>
+                <td>$15.00</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>$20.00</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

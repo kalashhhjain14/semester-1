@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled List Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 40px;
+        }
+
+        .container {
+            border-left: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+            padding: 30px;
+            width: 60%;
+            margin: auto;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul.styled-list {
+            list-style-type: disc;
+            padding-left: 40px;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.8em;
+        }
+
+        ul.styled-list li {
+            margin-bottom: 10px;
+        }
+
+         ul.styled-list li::marker {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Styled List Example</h2>
+        <ul class="styled-list">
+            <li>this is the example.</li>
+            <li>this example includes css attribute properties.</li>
+            <li>this example include css list, font and padding properties.</li>
+            <li>This is the demo of it</li>
+        </ul>
+    </div>
+</body>
+</html>
